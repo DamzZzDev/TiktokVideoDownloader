@@ -1,0 +1,224 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #FF0050;
+    margin-bottom: 10px;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#tiktok-url {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+#tiktok-url:focus {
+    border-color: #FF0050;
+}
+
+#download-btn {
+    background-color: #FF0050;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+#download-btn:hover {
+    background-color: #e00046;
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+/* Result Container */
+.result-container {
+    margin-top: 30px;
+    display: none;
+}
+
+.video-preview {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.download-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.download-btn {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #25F4EE;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #1ad8e1;
+}
+
+.download-btn.hd {
+    background-color: #FF0050;
+}
+
+.download-btn.hd:hover {
+    background-color: #e00046;
+}
+
+/* Ad Container */
+.ad-container {
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+    border: 1px dashed #25F4EE;
+}
+
+.ad-container p {
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+.ad-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FF0050;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.ad-link:hover {
+    transform: translateY(-3px);
+}
+
+.ad-link img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+/* How to Use */
+.how-to-use {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.how-to-use h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.how-to-use ol {
+    padding-left: 20px;
+}
+
+.how-to-use li {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    color: #777;
+}
+
+footer a {
+    color: #FF0050;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        margin: 15px;
+        padding: 15px;
+    }
+    
+    .input-group {
+        flex-direction: column;
+    }
+    
+    #tiktok-url {
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    #download-btn {
+        border-radius: 5px;
+        padding: 12px;
+    }
+    
+    .download-options {
+        flex-direction: column;
+    }
+}
